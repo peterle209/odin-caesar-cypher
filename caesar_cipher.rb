@@ -4,7 +4,7 @@ ASCII_DOWN_START = 97
 ASCII_DOWN_LIMIT = 121
 WRAP = 26
 
-def caesar_cipher (string, shift_factor)
+def caesar_cipher(string, shift_factor)
   cypher = string.chars.map do |c|
     c = c.ord
     if c >= ASCII_UP_START && c <= ASCII_UP_LIMIT
@@ -20,7 +20,3 @@ def caesar_cipher (string, shift_factor)
   end
   puts cypher.join
 end
-
-
-caesar_cipher("Hello!", 3)
-caesar_cipher("What a string!", 5)
